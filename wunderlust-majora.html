@@ -39,21 +39,16 @@
             <a href="index.html" id="logo"><img src="images/logo.png" alt="The Wunderlust logo shows blue waves and the outline of two palm trees against an orange sun"></a>
             <h1>Wunderlust</h1>
 			<p>Let Wunderlust Travel help you plan the trip of your dreams!</p>			
-            <nav>
-                <div id="menu-toggle">
-                    <!-- responsive menu code from (with changes made to match mockups): https://css-tricks.com/three-css-alternatives-to-javascript-navigation/ -->
-                    <h2 class="sr-only">Main Navigation</h2>
-                    <!-- hidden but accessible headings from: https://webaim.org/techniques/css/invisiblecontent/ -->
-                    <input name="toggle" id="toggle" type="checkbox">
-                    <label for="toggle">Menu</label>
-                    <div class="dropdown-content">
-                    <ul>
-                        <li class="active"><a href="#">Destinations</a></li>
-                        <li><a href="#">Inspirations</a></li>
-                        <li><a href="#">Special</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                    </div>
+        </header>
+            <nav class="dropdown">
+                <span>Menu</span>
+                <div class="dropdown-content">
+                  <ul>
+                    <li><a href="#">Destinations</li>
+                    <li><a href="#">Inspirations</li>
+                    <li><a href="#">Specials</li>
+                    <li><a href="#">Contact Us</li>
+                  </ul>
                 </div>
             </nav>
         </header>
@@ -71,58 +66,59 @@
                             <img src="images/majorca-cove.png" alt="Deep blue water leading to the horizon with the island and trees in the foreground">
                         </picture>
                     </div>
-                </div>  
+                </div >  
+
                 <section id="plan">
                     <h3>Plan Your Trip</h3>
-                    <div>
-                        <section>
+                    <div id="flex">
+                        <section class="plan">
                             <h4>How to Get There</h4>
                             <a href="#" title="Search for flights">
-                                <img src="images/get.svg" alt="airplane icon">
+                                <img class="icon" src="images/get.svg" alt="airplane icon">
                             </a>
                         </section>      
-                        <section>
+                        <section class="plan">
                             <h4>Places to Stay</h4>
                             <a href="#" title="Search for hotels">
-                                <img src="images/stay.svg" alt="bed icon">
+                                <img class="icon" src="images/stay.svg" alt="bed icon">
                             </a>
                         </section>
-                        <section>
+                        <section class="plan">
                             <h4>Things to Do</h4>
                             <a href="#" title="Search for Activities">
-                                <img src="images/do.svg" alt="sailboat icon">
+                                <img class="icon" src="images/do.svg" alt="sailboat icon">
                             </a>                     
                         </section>    
-                        <section>
+                        <section class="plan">
                             <h4>Where to Eat</h4>
                             <a href="#" title="Search for Restaurants">
-                                <img src="images/eat.svg" alt="fork and spoon icon">                         
+                                <img class="icon" src="images/eat.svg" alt="fork and spoon icon">                         
                             </a>
                         </section>
                     </div>   
                 </section>
                 <section id="testimonials">
                     <h3>Testimonials</h3>
-                    <div>
-                        <section>
+                    <div id="flex2">
+                        <section class="bio">
                             <img src="images/miranda-blake.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
                             <h4>Amanda Blake</h4>
                             <p>London, England</p>
                             <q>I traveled here for business, but my stay was extended. Now it is my home.</q>
                         </section>
-                        <section>
+                        <section class="bio">
                             <img src="images/max-winter.png" alt="Max Winter has dark blonde hair and a trimmed beard and mustache">
                             <h4>Max Winter</h4>
                             <p>Berlin, Germany</p>
                             <q>Great escape from my reality. Beautiful sunsets, wonderful people, great beer.</q>
                         </section>
-                        <section>
+                        <section class="bio">
                             <img src="images/ines-villegoes.png" alt="Ines Villegos has shoulder-length, wavy, brown hair and is wearing a brown sweater"> 
                             <h4>Inés Villegos</h4> 
                             <p>Barcelona, Spain</p>
                             <q>A very safe environment for all travelers.</q>
                         </section>
-                        <section>
+                        <section class="bio">
                             <img src="images/carmen-lorenzo.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings">
                             <h4>Carmen Lorenzo</h4> 
                             <p>Madrid, Spain</p>
@@ -132,13 +128,13 @@
                 </section>
                 <section id="about">
                     <h3>About Your Destination</h3>
-                    <div>
+                    <div id="flex3">
                         <section>
                             <img src="images/size.svg" alt="ruler icon">
                             <h4>Size</h4> 
                             <p>1,405 miles squared</p>
                         </section>
-                        <section>
+                        <section class="flex3child">
                             <img src="images/elevation.svg" alt="mountain icon">
                             <h4>Elevation</h4> 
                             <p>4,741 feet</p>
